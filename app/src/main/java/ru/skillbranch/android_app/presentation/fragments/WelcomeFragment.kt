@@ -15,7 +15,7 @@ class WelcomeFragment : Fragment(R.layout.fragment_welcome) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         welcomeBinding = FragmentWelcomeBinding.bind(view)
-        moveToLogin()
+        backButtonClick()
         Log.d("WelcomeFragment", "onViewCreated loginBinding: $welcomeBinding")
     }
 
@@ -25,7 +25,7 @@ class WelcomeFragment : Fragment(R.layout.fragment_welcome) {
         Log.d("WelcomeFragment", "onDestroyView loginBinding: $welcomeBinding")
     }
 
-    private fun moveToLogin() {
+    private fun backButtonClick() {
         welcomeBinding?.ibBackLogin?.setOnClickListener {
             val action = WelcomeFragmentDirections.actionWelcomeFragmentToLoginFragment()
             view?.findNavController()?.navigate(action)

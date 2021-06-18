@@ -15,7 +15,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         loginBinding = FragmentLoginBinding.bind(view)
-        moveToWelcome()
+        navButtonClick()
         Log.d("LoginFragment", "onViewCreated loginBinding: $loginBinding")
     }
 
@@ -25,7 +25,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         Log.d("LoginFragment", "onDestroyView loginBinding: $loginBinding")
     }
 
-    private fun moveToWelcome() {
+    private fun navButtonClick() {
         loginBinding?.fabNextStep?.setOnClickListener {
             val action = LoginFragmentDirections.actionLoginFragmentToWelcomeFragment2()
             view?.findNavController()?.navigate(action)

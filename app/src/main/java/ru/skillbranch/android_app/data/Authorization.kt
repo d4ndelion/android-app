@@ -1,7 +1,6 @@
 package ru.skillbranch.android_app.data
 
 interface Authorization {
-    suspend fun checkAuth(token: String, password: String)
-
-    suspend fun getUserToken(mail: String, password: String)
+    suspend fun checkUserAuth(mail: String, password: String) : Boolean
+    suspend fun signIn(mail: String, password: String) : Boolean
 }
