@@ -1,6 +1,2 @@
 rootProject.name = "android-app"
-<<<<<<< HEAD
 include ':app'
-=======
-include ':app'
->>>>>>> origin/master
