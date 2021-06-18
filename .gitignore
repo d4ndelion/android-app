@@ -13,3 +13,12 @@
 .externalNativeBuild
 .cxx
 local.properties
+/.idea/.name
+/.idea/compiler.xml
+/.idea/gradle.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/runConfigurations.xml
+/.idea/shelf/Uncommitted_changes_before_Update_at_18_06_2021_13_58_[Default_Changelist]/shelved.patch
+/.idea/shelf/Uncommitted_changes_before_Update_at_18_06_2021_13_58__Default_Changelist_.xml
+/.idea/vcs.xml
