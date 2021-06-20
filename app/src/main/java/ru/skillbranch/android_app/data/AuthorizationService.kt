@@ -15,7 +15,7 @@ interface AuthorizationService {
         @Query("password") password: String?
     ): Boolean
 
-    companion object Factory {
+    companion object SingleAuthorizationService {
         fun create(): AuthorizationService {
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())

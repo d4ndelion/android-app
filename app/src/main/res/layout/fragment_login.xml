@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
     <data>
+
         <variable
-            name="vm"
+            name="loginVM"
             type="ru.skillbranch.android_app.presentation.viewmodels.LoginViewModel" />
-        <!--пока что не использую-->
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -55,7 +56,8 @@
                 android:background="@drawable/login_et_border"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:labelFor="@id/et_email" />
+                android:labelFor="@id/et_email"
+                android:text="@{loginVM.mail}" />
 
             <EditText
                 android:id="@+id/et_password"
@@ -65,7 +67,8 @@
                 android:background="@drawable/login_et_border"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:labelFor="@id/et_password" />
+                android:labelFor="@id/et_password"
+                android:text="@{loginVM.password}" />
 
         </LinearLayout>
 

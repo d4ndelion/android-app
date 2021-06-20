@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <data>
+
         <variable
-            name="vm"
+            name="welcomeVM"
             type="ru.skillbranch.android_app.presentation.viewmodels.WelcomeViewModel" />
-        <!--пока что не использую-->
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
