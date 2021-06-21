@@ -14,12 +14,8 @@ import ru.skillbranch.android_app.data.AuthorizationService
 import ru.skillbranch.android_app.model.LoginModel
 import ru.skillbranch.android_app.presentation.viewmodels.LoginViewModel
 
-
-
 class MainActivity : AppCompatActivity() {
-
     private val loginViewModel: LoginViewModel by viewModel()
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

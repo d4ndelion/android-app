@@ -15,18 +15,16 @@ import ru.skillbranch.android_app.presentation.viewmodels.LoginViewModel
 val appModule = module {
     factory { LoginModel(mail = get(), password = get()) }
     single { AuthorizationService.create() }
-    viewModel { LoginViewModel(mail = get(), password = get()) }
+    viewModel { LoginViewModel() }
 }
 
 class App : Application() {
     override fun onCreate() {
         super.onCreate()
-
         startKoin {
-            androidLogger(Level.DEBUG)
+            androidLogger(Level.ERROR)
             androidContext(this@App)
             modules(appModule) // java.lang.NoSuchMethodError: No virtual method elapsedNow-UwyO8pc()D in class Lkotlin/time/TimeMark;
         }
     }
-
 }

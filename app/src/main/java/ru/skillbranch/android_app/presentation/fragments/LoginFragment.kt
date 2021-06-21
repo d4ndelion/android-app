@@ -30,7 +30,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
     private fun navButtonClick() {
         loginBinding?.fabNextStep?.setOnClickListener {
-            Log.d("asdasd", "mail: ${loginViewModel.mail}, pass: ${loginViewModel.password}")
+            Log.d("asdasd", "mail: \"${loginBinding?.etEmail?.text}\", pass: \"${loginBinding?.etPassword?.text}\"")
             val action = LoginFragmentDirections.actionLoginFragmentToWelcomeFragment2()
             view?.findNavController()?.navigate(action)
         }

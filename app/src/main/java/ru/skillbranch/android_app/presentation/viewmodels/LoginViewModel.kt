@@ -14,4 +14,5 @@ class LoginViewModel(
     private val isLoading: MutableLiveData<Boolean>? = null,
     val loginModel: LoginModel? = LoginModel(mail?.value, password?.value)
     ) : ViewModel() {
+
 }
